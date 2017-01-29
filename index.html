@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stopwatch</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div id="watch-wrapper">
+		<div id="header-wrapper">
+			<h1>STOPWATCH</h1>
+		</div>
+		<hr>
+		<div id="timers-wrapper">
+			<div id="lap-wrapper">
+				<h4>
+					<span id="lap-min">00</span>:
+					<span id="lap-sec">00</span>.
+					<span id="lap-hun">00</span>
+				</h4>
+			</div>
+			<div id="timer-wrapper">
+				<h2>
+					<span id="time-min">00</span>:
+					<span id="time-sec">00</span>.
+					<span id="time-hun">00</span>
+				</h2>
+			</div>
+			<hr>
+			<div id="buttons-wrapper">
+				<button id="start-btn" onClick="start()">Start</button>
+				<button id="stop-btn" class="hidden" onClick="stop()">Stop</button>
+				<button id="lap-btn" class="hidden" onClick="laps()">Lap</button>
+				<button id="reset-btn" onClick="reset()">Reset</button>
+			</div>
+			<hr>
+			<div id="laps-wrapper">
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
